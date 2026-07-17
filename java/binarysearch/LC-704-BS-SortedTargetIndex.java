@@ -4,12 +4,12 @@ class Solution {
         int right = nums.length-1;
         int n = nums.length;
         while(left<=right){
-            int mid=(right+(left-right))/2;
+            int mid=right+(left-right)/2;
             if(nums[mid]==target){
                 return mid;
             }
             else if(target<nums[mid]){
-                right = mid-1;
+                right=mid-1;
             }
             else if(target>nums[mid]){
                 left=mid+1;
