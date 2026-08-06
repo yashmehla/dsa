@@ -4,6 +4,9 @@ class Solution {
             if(arr[i]<=k){
                 k++;
             }
+            else{
+                break;
+            }
         }
         return k;
     }
